@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- 1. Monacaで必要なプラグイン/デザインを設定する--> 
+  <script src="plugins/plugin-loader.js"></script>
+  <link rel="stylesheet" href="plugins/plugin-loader.css">
+  <script>
+    <!-- 2. ビューポートの設定 --> 
+    monaca.viewport({width: 480});
+  </script>  
+
+</head>
+<body>
+
+<div id="loginPage" data-role="page" data-theme="b">
+
+  <div data-role="header" data-position="fixed">
+    <h3>Monacaでモバイルアプリを作ろう</h3>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="login.html" class="ui-btn-active">ログイン</a></li>
+        <li><a href="register.html">アカウント登録</a></li>
+        <li><a href="compass.html">方位取得</a></li>
+      </ul>
+    </div>
+    <h3>ログイン画面</h3>
+  </div>
+  
+  <div role="main" class="ui-content">  
+    <div data-role="fieldcontain">
+      <label for="username">ID:</label>
+      <input type="text" id="username">
+    </div>
+    <div data-role="fieldcontain">
+      <label for="password">パスワード:</label>
+      <input type="password" id="password">
+    </div>
+    <div data-role="fieldcontain">
+      <button id="loginBtn" class="ui-btn">ログイン</button>
+      <button id="cancelBtn" class="ui-btn">キャンセル</button>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    WINGS Project
+  </div>
+
+</div>
+
+</body>
+</html>
